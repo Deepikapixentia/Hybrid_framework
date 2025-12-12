@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 289.1 s <<< FAILURE! -- in TestSuite
-regression.StepperPOM.stepperpagetest[{SkillName=Apache JMeter, SkillLevel=Beginner, Username=test@pixentia.com, FirstName=test, JobCategory=Software Quality Assurance, TestCaseID=TC_stepper-001, LastName=test, InterestData=Testing, Password=Test123$}](1) -- Time elapsed: 13.35 s <<< FAILURE!
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 189.8 s <<< FAILURE! -- in TestSuite
+regression.StepperPOM.stepperpagetest[{SkillName=Apache JMeter, SkillLevel=Beginner, Username=test@pixentia.com, FirstName=test, JobCategory=Software Quality Assurance, TestCaseID=TC_stepper-001, LastName=test, InterestData=Testing, Password=Test123$}](1) -- Time elapsed: 13.57 s <<< FAILURE!
 org.openqa.selenium.StaleElementReferenceException: 
 stale element reference: stale element not found in the current frame
   (Session info: chrome=143.0.7499.42)
@@ -10,10 +10,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a54af1d8d6de150439b2edd376df72e, isElementDisplayed {id=f.88D89FA5A3A34027AD33854DF0EF5DA9.d.290A0D2947E18A8A80033889F9164B1F.e.79}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58491}, goog:processID: 2496, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58491/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6a54af1d8d6de150439b2edd376df72e)] -> xpath: //mat-option[contains(@class,'mat-mdc-option mdc-list-item')and normalize-space()='Software Quality Assurance']]
-Session ID: 6a54af1d8d6de150439b2edd376df72e
+Command: [948c47cf2db6ae4a20bd62ba6fae1ead, isElementDisplayed {id=f.03B9FB7614EDC8F1627543E7FE867032.d.8E73F8E40B8F74F8D1FE06F2712E82AD.e.79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58968}, goog:processID: 1076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58968/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (948c47cf2db6ae4a20bd62ba6fae1ead)] -> xpath: //mat-option[contains(@class,'mat-mdc-option mdc-list-item')and normalize-space()='Software Quality Assurance']]
+Session ID: 948c47cf2db6ae4a20bd62ba6fae1ead
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -70,7 +70,7 @@ Session ID: 6a54af1d8d6de150439b2edd376df72e
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-regression.GAdmin_HomewithPOM.homePageRedirectionsvalidation -- Time elapsed: 60.56 s <<< FAILURE!
+regression.GAdmin_HomewithPOM.homePageRedirectionsvalidation -- Time elapsed: 60.44 s <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'card purple ng')]//child::button[text()='View']' (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
@@ -115,9 +115,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ebc8c99488daed820c2522e0c832f0d6, findElement {value=//div[contains(@class,'card purple ng')]//child::button[text()='View'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58537}, goog:processID: 30908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58537/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ebc8c99488daed820c2522e0c832f0d6
+Command: [476177bdc74df6baeda4ff3427301e7b, findElement {using=xpath, value=//div[contains(@class,'card purple ng')]//child::button[text()='View']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59015}, goog:processID: 1520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59015/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 476177bdc74df6baeda4ff3427301e7b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regression.GAdmin_HomewithPOM">
+      <class name="regression.StepperPOM">
         <methods>
-          <include name="homePageRedirectionsvalidation"/>
           <include name="tearDown"/>
+          <include name="stepperpagetest" invocation-numbers="0"/>
           <include name="fileConfiuration"/>
           <include name="browserSetup"/>
           <include name="reportsFlush"/>
         </methods>
-      </class> <!-- regression.GAdmin_HomewithPOM -->
+      </class> <!-- regression.StepperPOM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

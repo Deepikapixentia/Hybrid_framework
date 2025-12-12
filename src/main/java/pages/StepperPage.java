@@ -104,12 +104,6 @@ public class StepperPage extends BasePage {
 				+ jobcategoryname + "']";
 
 		WebElement jobTitleOption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		click(jobTitleOption);
 	}
 
@@ -126,16 +120,15 @@ public class StepperPage extends BasePage {
 	public void selectInterestFromDropdown(String interestname) {
 		wait.until(ExpectedConditions.visibilityOf(SelectInterests));
 		type(SelectInterests, interestname);
+		   try {
+		        Thread.sleep(2000); 
+		    } catch (InterruptedException e) {
+		        e.printStackTrace();
+		    }
 
 		String optionXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')" + "and normalize-space()='"
 				+ interestname + "']";
 		WebElement interestoption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		click(interestoption);
 	}
 
@@ -165,34 +158,32 @@ public class StepperPage extends BasePage {
 		type(SelectSkills, skillname);
 	//	String optionXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')" + "and normalize-space()='"
 	//			+skillname + "']";
-		
+		   try {
+		        Thread.sleep(2000); 
+		    } catch (InterruptedException e) {
+		        e.printStackTrace();
+		    }
 		
 				String optionXpath = "//span[contains(@class,'mdc-list-item__primary-text')" + "and normalize-space()='"
 						+skillname + "']";
 
 		WebElement skilloption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		click(skilloption);
 	}
 
 	public void selectSkillLevelFromDropdown(String skilllevelname) {
 		click(skilllevel);
+		
+		   try {
+		        Thread.sleep(2000); 
+		    } catch (InterruptedException e) {
+		        e.printStackTrace();
+		    }
 
 		String levelXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')"+ "and normalize-space()='"
 				+ skilllevelname + "']";
 
 		WebElement leveloption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(levelXpath)));
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		click(leveloption);
 	}
 
