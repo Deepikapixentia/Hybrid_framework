@@ -1,17 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-12T18:45:54 IST" name="Default suite" finished-at="2025-12-12T18:46:49 IST" duration-ms="55364">
+  <suite started-at="2025-12-12T20:36:48 IST" name="Novo Automation Suite" finished-at="2025-12-12T20:39:01 IST" duration-ms="132912">
     <groups>
     </groups>
-    <test started-at="2025-12-12T18:45:54 IST" name="Default test" finished-at="2025-12-12T18:46:49 IST" duration-ms="55364">
-      <class name="regression.GAdmin_HomewithPOM">
-        <test-method is-config="true" signature="fileConfiuration()[pri:0, instance:regression.GAdmin_HomewithPOM@d35dea7]" started-at="2025-12-12T18:45:54 IST" name="fileConfiuration" finished-at="2025-12-12T18:45:54 IST" duration-ms="314" status="PASS">
+    <test started-at="2025-12-12T20:36:48 IST" name="All Functional Tests" finished-at="2025-12-12T20:39:01 IST" duration-ms="132912">
+      <class name="regression.SignUPWithPOM">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.SignUPWithPOM@bccb269]" started-at="2025-12-12T20:37:37 IST" name="browserSetup" finished-at="2025-12-12T20:37:42 IST" duration-ms="4600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.SignUPWithPOM.SignUPValidation(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="SignUPValidation(java.util.HashMap)[pri:0, instance:regression.SignUPWithPOM@bccb269]" started-at="2025-12-12T20:37:42 IST" name="SignUPValidation" data-provider="getSignUPdata" finished-at="2025-12-12T20:37:51 IST" duration-ms="9480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Zip=520015, ConfPassword=Test123$, Email=test@pixentia.com, FirstName=Deepika, Address2=sign nagar, TestCaseID=TC_signup-001, Address1=Pipul Road, City=vijayawada, Emailexisterrormessage=Email already Exists , State=Andhra Pradesh, Country=Bharat, LastName=Lakkamraju, Password=Test123$}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUPValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.SignUPWithPOM@bccb269]" started-at="2025-12-12T20:37:52 IST" name="tearDown" finished-at="2025-12-12T20:37:52 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- regression.SignUPWithPOM -->
+      <class name="smoke.LoginWithdataproviderPOM">
+        <test-method is-config="true" signature="fileConfiuration()[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:36:48 IST" name="fileConfiuration" finished-at="2025-12-12T20:36:49 IST" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileConfiuration -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.GAdmin_HomewithPOM@d35dea7]" started-at="2025-12-12T18:45:54 IST" name="browserSetup" finished-at="2025-12-12T18:46:01 IST" duration-ms="6666" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:36:50 IST" name="browserSetup" finished-at="2025-12-12T20:36:59 IST" duration-ms="9234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.LoginWithdataproviderPOM.login(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:36:59 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:37:06 IST" duration-ms="7134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Title=Home, TestCaseID=TC_login-001, UserName=bdatla@pixentia.com, Password=Test123$}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:06 IST" name="tearDown" finished-at="2025-12-12T20:37:07 IST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:07 IST" name="browserSetup" finished-at="2025-12-12T20:37:12 IST" duration-ms="5514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.LoginWithdataproviderPOM.login(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:12 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:37:15 IST" duration-ms="2401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Title=ChasmaNOVO, TestCaseID=TC_login-002, UserName=bdatla@pixentia.com, ExpectedErrorMessage=Incorrect username or password., Password=Test1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:15 IST" name="tearDown" finished-at="2025-12-12T20:37:15 IST" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:15 IST" name="browserSetup" finished-at="2025-12-12T20:37:20 IST" duration-ms="5240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.LoginWithdataproviderPOM.login(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:20 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:37:23 IST" duration-ms="2434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Title=ChasmaNOVO, TestCaseID=TC_login-003, UserName=bdatla@phenom.com, ExpectedErrorMessage=Incorrect username or password., Password=Test123$}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:23 IST" name="tearDown" finished-at="2025-12-12T20:37:23 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:23 IST" name="browserSetup" finished-at="2025-12-12T20:37:29 IST" duration-ms="5333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.LoginWithdataproviderPOM.login(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:29 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:37:31 IST" duration-ms="2663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Title=ChasmaNOVO, TestCaseID=TC_login-004, UserName=bdatla@phenom.com, ExpectedErrorMessage=Incorrect username or password., Password=test1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:31 IST" name="tearDown" finished-at="2025-12-12T20:37:32 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:32 IST" name="browserSetup" finished-at="2025-12-12T20:37:37 IST" duration-ms="4919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.LoginWithdataproviderPOM.login(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:37 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:37:37 IST" duration-ms="37" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Expected Title=ChasmaNOVO, TestCaseID=TC_login-005, ExpectedUserNameErrorMessage=Username is required, ExpectedPasswordErrorMessage=Password is required}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at pages.BasePage.type(BasePage.java:28)
+at pages.LoginPage.usernamefield(LoginPage.java:33)
+at smoke.LoginWithdataproviderPOM.login(LoginWithdataproviderPOM.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:37:37 IST" name="tearDown" finished-at="2025-12-12T20:37:37 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportsFlush()[pri:0, instance:smoke.LoginWithdataproviderPOM@63475ace]" started-at="2025-12-12T20:39:01 IST" name="reportsFlush" finished-at="2025-12-12T20:39:01 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsFlush -->
+      </class> <!-- smoke.LoginWithdataproviderPOM -->
+      <class name="regression.GAdmin_HomewithPOM">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.GAdmin_HomewithPOM@17f7cd29]" started-at="2025-12-12T20:38:18 IST" name="browserSetup" finished-at="2025-12-12T20:38:23 IST" duration-ms="5098" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,19 +233,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="homePageRedirectionsvalidation()[pri:0, instance:regression.GAdmin_HomewithPOM@d35dea7]" started-at="2025-12-12T18:46:01 IST" name="homePageRedirectionsvalidation" finished-at="2025-12-12T18:46:48 IST" duration-ms="47359" status="PASS">
+        <test-method signature="homePageRedirectionsvalidation()[pri:0, instance:regression.GAdmin_HomewithPOM@17f7cd29]" started-at="2025-12-12T20:38:23 IST" name="homePageRedirectionsvalidation" finished-at="2025-12-12T20:39:00 IST" duration-ms="37537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageRedirectionsvalidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.GAdmin_HomewithPOM@d35dea7]" started-at="2025-12-12T18:46:48 IST" name="tearDown" finished-at="2025-12-12T18:46:49 IST" duration-ms="545" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.GAdmin_HomewithPOM@17f7cd29]" started-at="2025-12-12T20:39:00 IST" name="tearDown" finished-at="2025-12-12T20:39:01 IST" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportsFlush()[pri:0, instance:regression.GAdmin_HomewithPOM@d35dea7]" started-at="2025-12-12T18:46:49 IST" name="reportsFlush" finished-at="2025-12-12T18:46:49 IST" duration-ms="426" status="PASS">
+      </class> <!-- regression.GAdmin_HomewithPOM -->
+      <class name="regression.StepperPOM">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.StepperPOM@609cd4d8]" started-at="2025-12-12T20:37:52 IST" name="browserSetup" finished-at="2025-12-12T20:37:57 IST" duration-ms="4685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.StepperPOM.stepperpagetest(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reportsFlush -->
-      </class> <!-- regression.GAdmin_HomewithPOM -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- browserSetup -->
+        <test-method signature="stepperpagetest(java.util.HashMap)[pri:0, instance:regression.StepperPOM@609cd4d8]" started-at="2025-12-12T20:37:57 IST" name="stepperpagetest" data-provider="getTestDataFromExcel" finished-at="2025-12-12T20:38:17 IST" duration-ms="20288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{SkillName=Apache JMeter, SkillLevel=Beginner, Username=test@pixentia.com, FirstName=test, JobCategory=Software Quality Assurance, TestCaseID=TC_stepper-001, LastName=test, InterestData=Testing, Password=Test123$}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stepperpagetest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.StepperPOM@609cd4d8]" started-at="2025-12-12T20:38:17 IST" name="tearDown" finished-at="2025-12-12T20:38:18 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- regression.StepperPOM -->
+    </test> <!-- All Functional Tests -->
+  </suite> <!-- Novo Automation Suite -->
 </testng-results>

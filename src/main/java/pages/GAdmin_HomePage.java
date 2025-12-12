@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,9 +35,30 @@ public class GAdmin_HomePage extends BasePage {
 		super();
 	}
 
-	public void usersView() {
-		click(userstabviewbutton);
+	public void usersView() {		
+		wait.until(ExpectedConditions.visibilityOf(userstabviewbutton));		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", userstabviewbutton);
 	}
+
+	public void learningJourneyTabView() {
+		wait.until(ExpectedConditions.visibilityOf(learnjourneytabviewbutton));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", learnjourneytabviewbutton);
+	}
+
+	public void gamificationTabView() {
+		wait.until(ExpectedConditions.visibilityOf(gamificationtabviewbutton));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", gamificationtabviewbutton);
+	}
+
+	public void assessmentsTabView() {
+		wait.until(ExpectedConditions.visibilityOf(assessementtabviewbutton));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", assessementtabviewbutton);
+	}
+
 
 	public void clicOnHomeTab() {
 	
@@ -48,20 +70,10 @@ public class GAdmin_HomePage extends BasePage {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			click(homebutton);
+			// It is safer to use JS click here too if the menu is finicky
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click();", homebutton);
 		}
-	}
-
-	public void learningJourneyTabView() {
-		click(learnjourneytabviewbutton);
-	}
-
-	public void gamificationTabView() {
-		click(gamificationtabviewbutton);
-	}
-
-	public void assessmentsTabView() {
-		click(assessementtabviewbutton);
 	}
 
 	public void getTotalOrgsInApplication() {

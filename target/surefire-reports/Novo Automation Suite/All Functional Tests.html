@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 12 17:07:09 IST 2025</td>
+<td>Started on:</td><td>Fri Dec 12 20:04:49 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>189 seconds (189109 ms)</td>
+<tr><td>Total time:</td><td>146 seconds (146051 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,94 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='regression.StepperPOM.stepperpagetest()'><b>stepperpagetest</b><br>Test class: regression.StepperPOM<br>Parameters: {SkillName=Apache JMeter, SkillLevel=Beginner, Username=test@pixentia.com, FirstName=test, JobCategory=Software Quality Assurance, TestCaseID=TC_stepper-001, LastName=test, InterestData=Testing, Password=Test123$}</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=143.0.7499.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81e5071a26629cbd5a54ce9488ea0c7c, clickElement {id=f.7EE7442DA10A4CC37B8C8C5E686BE3D7.d.C7F34E5B8BD10423E25032E44CB37A4E.e.80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62707}, goog:processID: 2292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62707/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81e5071a26629cbd5a54ce9488ea0c7c)] -&gt; xpath: //mat-option[contains(@class,&apos;mat-mdc-option mdc-list-item&apos;)and normalize-space()=&apos;Software Quality Assurance&apos;]]
+Session ID: 81e5071a26629cbd5a54ce9488ea0c7c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.BasePage.click(BasePage.java:34)
+	at pages.StepperPage.selectJobCategoryFromDropdown(StepperPage.java:107)
+	at regression.StepperPOM.stepperpagetest(StepperPOM.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1914526580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1914526580'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=143.0.7499.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81e5071a26629cbd5a54ce9488ea0c7c, clickElement {id=f.7EE7442DA10A4CC37B8C8C5E686BE3D7.d.C7F34E5B8BD10423E25032E44CB37A4E.e.80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62707}, goog:processID: 2292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62707/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81e5071a26629cbd5a54ce9488ea0c7c)] -&gt; xpath: //mat-option[contains(@class,&apos;mat-mdc-option mdc-list-item&apos;)and normalize-space()=&apos;Software Quality Assurance&apos;]]
+Session ID: 81e5071a26629cbd5a54ce9488ea0c7c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.BasePage.click(BasePage.java:34)
+	at pages.StepperPage.selectJobCategoryFromDropdown(StepperPage.java:107)
+	at regression.StepperPOM.stepperpagetest(StepperPOM.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>11</td>
+<td>regression.StepperPOM@5656be13</td></tr>
+<tr>
 <td title='regression.GAdmin_HomewithPOM.homePageRedirectionsvalidation()'><b>homePageRedirectionsvalidation</b><br>Test class: regression.GAdmin_HomewithPOM</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[contains(@class,&apos;card purple ng&apos;)]//child::button[text()=&apos;View&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
@@ -90,9 +178,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [476177bdc74df6baeda4ff3427301e7b, findElement {using=xpath, value=//div[contains(@class,&apos;card purple ng&apos;)]//child::button[text()=&apos;View&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59015}, goog:processID: 1520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59015/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 476177bdc74df6baeda4ff3427301e7b
+Command: [b0ff65f4fae81145233adea24fa726c9, findElement {value=//div[contains(@class,&apos;card purple ng&apos;)]//child::button[text()=&apos;View&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62752}, goog:processID: 28536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62752/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0ff65f4fae81145233adea24fa726c9
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -114,8 +202,8 @@ Session ID: 476177bdc74df6baeda4ff3427301e7b
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 35 more
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1017203956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1017203956'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[contains(@class,&apos;card purple ng&apos;)]//child::button[text()=&apos;View&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1462350864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1462350864'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[contains(@class,&apos;card purple ng&apos;)]//child::button[text()=&apos;View&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pages.BasePage.click(BasePage.java:33)
@@ -159,9 +247,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [476177bdc74df6baeda4ff3427301e7b, findElement {using=xpath, value=//div[contains(@class,&apos;card purple ng&apos;)]//child::button[text()=&apos;View&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59015}, goog:processID: 1520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59015/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 476177bdc74df6baeda4ff3427301e7b
+Command: [b0ff65f4fae81145233adea24fa726c9, findElement {value=//div[contains(@class,&apos;card purple ng&apos;)]//child::button[text()=&apos;View&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62752}, goog:processID: 28536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62752/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0ff65f4fae81145233adea24fa726c9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -191,106 +279,6 @@ Session ID: 476177bdc74df6baeda4ff3427301e7b
 </pre></div></td>
 <td>60</td>
 <td>regression.GAdmin_HomewithPOM@4218d6a3</td></tr>
-<tr>
-<td title='regression.StepperPOM.stepperpagetest()'><b>stepperpagetest</b><br>Test class: regression.StepperPOM<br>Parameters: {SkillName=Apache JMeter, SkillLevel=Beginner, Username=test@pixentia.com, FirstName=test, JobCategory=Software Quality Assurance, TestCaseID=TC_stepper-001, LastName=test, InterestData=Testing, Password=Test123$}</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=143.0.7499.42)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [948c47cf2db6ae4a20bd62ba6fae1ead, isElementDisplayed {id=f.03B9FB7614EDC8F1627543E7FE867032.d.8E73F8E40B8F74F8D1FE06F2712E82AD.e.79}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58968}, goog:processID: 1076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58968/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (948c47cf2db6ae4a20bd62ba6fae1ead)] -&gt; xpath: //mat-option[contains(@class,&apos;mat-mdc-option mdc-list-item&apos;)and normalize-space()=&apos;Software Quality Assurance&apos;]]
-Session ID: 948c47cf2db6ae4a20bd62ba6fae1ead
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:662)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pages.BasePage.click(BasePage.java:33)
-	at pages.StepperPage.selectJobCategoryFromDropdown(StepperPage.java:113)
-	at regression.StepperPOM.stepperpagetest(StepperPOM.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1762260670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1762260670'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=143.0.7499.42)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [948c47cf2db6ae4a20bd62ba6fae1ead, isElementDisplayed {id=f.03B9FB7614EDC8F1627543E7FE867032.d.8E73F8E40B8F74F8D1FE06F2712E82AD.e.79}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58968}, goog:processID: 1076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58968/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (948c47cf2db6ae4a20bd62ba6fae1ead)] -&gt; xpath: //mat-option[contains(@class,&apos;mat-mdc-option mdc-list-item&apos;)and normalize-space()=&apos;Software Quality Assurance&apos;]]
-Session ID: 948c47cf2db6ae4a20bd62ba6fae1ead
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:662)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pages.BasePage.click(BasePage.java:33)
-	at pages.StepperPage.selectJobCategoryFromDropdown(StepperPage.java:113)
-	at regression.StepperPOM.stepperpagetest(StepperPOM.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>13</td>
-<td>regression.StepperPOM@5656be13</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -301,24 +289,19 @@ Session ID: 948c47cf2db6ae4a20bd62ba6fae1ead
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='smoke.LoginWithdataproviderPOM.login()'><b>login</b><br>Test class: smoke.LoginWithdataproviderPOM<br>Parameters: {Expected Title=ChasmaNOVO, UserName=, TestCaseID=TC_login-005, ExpectedErrorMessage=, ExpectedUserNameErrorMessage=Username is required, ExpectedPasswordErrorMessage=Password is required, Password=}</td>
+<td title='smoke.LoginWithdataproviderPOM.login()'><b>login</b><br>Test class: smoke.LoginWithdataproviderPOM<br>Parameters: {Expected Title=ChasmaNOVO, UserName=bdatla@phenom.com, TestCaseID=TC_login-003, ExpectedErrorMessage=Incorrect username or password., ExpectedUserNameErrorMessage=, ExpectedPasswordErrorMessage=, Password=Test123$}</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>smoke.LoginWithdataproviderPOM@a1153bc</td></tr>
 <tr>
 <td title='smoke.LoginWithdataproviderPOM.login()'><b>login</b><br>Test class: smoke.LoginWithdataproviderPOM<br>Parameters: {Expected Title=ChasmaNOVO, UserName=bdatla@phenom.com, TestCaseID=TC_login-004, ExpectedErrorMessage=Incorrect username or password., ExpectedUserNameErrorMessage=, ExpectedPasswordErrorMessage=, Password=test1234}</td>
 <td></td>
-<td>1</td>
-<td>smoke.LoginWithdataproviderPOM@a1153bc</td></tr>
-<tr>
-<td title='smoke.LoginWithdataproviderPOM.login()'><b>login</b><br>Test class: smoke.LoginWithdataproviderPOM<br>Parameters: {Expected Title=ChasmaNOVO, UserName=bdatla@pixentia.com, TestCaseID=TC_login-002, ExpectedErrorMessage=Incorrect username or password., ExpectedUserNameErrorMessage=, ExpectedPasswordErrorMessage=, Password=Test1234}</td>
-<td></td>
 <td>2</td>
 <td>smoke.LoginWithdataproviderPOM@a1153bc</td></tr>
 <tr>
-<td title='smoke.LoginWithdataproviderPOM.login()'><b>login</b><br>Test class: smoke.LoginWithdataproviderPOM<br>Parameters: {Expected Title=ChasmaNOVO, UserName=bdatla@phenom.com, TestCaseID=TC_login-003, ExpectedErrorMessage=Incorrect username or password., ExpectedUserNameErrorMessage=, ExpectedPasswordErrorMessage=, Password=Test123$}</td>
+<td title='smoke.LoginWithdataproviderPOM.login()'><b>login</b><br>Test class: smoke.LoginWithdataproviderPOM<br>Parameters: {Expected Title=ChasmaNOVO, UserName=, TestCaseID=TC_login-005, ExpectedErrorMessage=, ExpectedUserNameErrorMessage=Username is required, ExpectedPasswordErrorMessage=Password is required, Password=}</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>smoke.LoginWithdataproviderPOM@a1153bc</td></tr>
 <tr>
 <td title='regression.SignUPWithPOM.SignUPValidation()'><b>SignUPValidation</b><br>Test class: regression.SignUPWithPOM<br>Parameters: {Zip=520015, ConfPassword=Test123$, Email=test@pixentia.com, FirstName=Deepika, Address2=sign nagar, TestCaseID=TC_signup-001, Address1=Pipul Road, City=vijayawada, Emailexisterrormessage=Email already Exists , State=Andhra Pradesh, Country=Bharat, LastName=Lakkamraju, SuccessToasterMessage=, Password=Test123$}</td>
@@ -326,9 +309,14 @@ Session ID: 948c47cf2db6ae4a20bd62ba6fae1ead
 <td>9</td>
 <td>regression.SignUPWithPOM@235834f2</td></tr>
 <tr>
+<td title='smoke.LoginWithdataproviderPOM.login()'><b>login</b><br>Test class: smoke.LoginWithdataproviderPOM<br>Parameters: {Expected Title=ChasmaNOVO, UserName=bdatla@pixentia.com, TestCaseID=TC_login-002, ExpectedErrorMessage=Incorrect username or password., ExpectedUserNameErrorMessage=, ExpectedPasswordErrorMessage=, Password=Test1234}</td>
+<td></td>
+<td>1</td>
+<td>smoke.LoginWithdataproviderPOM@a1153bc</td></tr>
+<tr>
 <td title='smoke.LoginWithdataproviderPOM.login()'><b>login</b><br>Test class: smoke.LoginWithdataproviderPOM<br>Parameters: {Expected Title=Home, UserName=bdatla@pixentia.com, TestCaseID=TC_login-001, ExpectedErrorMessage=, ExpectedUserNameErrorMessage=, ExpectedPasswordErrorMessage=, Password=Test123$}</td>
 <td></td>
-<td>19</td>
+<td>7</td>
 <td>smoke.LoginWithdataproviderPOM@a1153bc</td></tr>
 </table><p>
 </body>

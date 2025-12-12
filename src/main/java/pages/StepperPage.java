@@ -92,19 +92,26 @@ public class StepperPage extends BasePage {
 	}
 
 	public void selectJobCategoryFromDropdown(String jobcategoryname) {
-		wait.until(ExpectedConditions.visibilityOf(SelectJobTitle));
-		type(SelectJobTitle, jobcategoryname);
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	    // 1. Type and wait
+	    wait.until(ExpectedConditions.visibilityOf(SelectJobTitle));
+	    type(SelectJobTitle, jobcategoryname);
 
-		String optionXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')" + "and normalize-space()='"
-				+ jobcategoryname + "']";
+	    // 2. Small static wait for animation
+	    try { Thread.sleep(2000); } catch (InterruptedException e) {}
 
-		WebElement jobTitleOption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
-		click(jobTitleOption);
+	    String optionXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item') and normalize-space()='" + jobcategoryname + "']";
+
+	    // 3. Retry Logic: Try 3 times to find and click
+	    for(int i=0; i<3; i++){
+	        try{
+	            WebElement option = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(optionXpath)));
+	            option.click();
+	            break; // If click works, exit loop
+	        } catch(org.openqa.selenium.StaleElementReferenceException ex){
+	            // If failed, wait 1 second and try again
+	            try { Thread.sleep(1000); } catch (InterruptedException e) {}
+	        }
+	    }
 	}
 
 	public void clickOnDetailsNextButton() {
@@ -118,18 +125,25 @@ public class StepperPage extends BasePage {
 	}
 
 	public void selectInterestFromDropdown(String interestname) {
-		wait.until(ExpectedConditions.visibilityOf(SelectInterests));
-		type(SelectInterests, interestname);
-		   try {
-		        Thread.sleep(2000); 
-		    } catch (InterruptedException e) {
-		        e.printStackTrace();
-		    }
+	    wait.until(ExpectedConditions.visibilityOf(SelectInterests));
+	    type(SelectInterests, interestname);
 
-		String optionXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')" + "and normalize-space()='"
-				+ interestname + "']";
-		WebElement interestoption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
-		click(interestoption);
+	    // 1. Wait for list to filter
+	    try { Thread.sleep(2000); } catch (InterruptedException e) {}
+
+	    String optionXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')" + "and normalize-space()='"
+	            + interestname + "']";
+
+	    // 2. Retry Logic
+	    for(int i=0; i<3; i++){
+	        try{
+	            WebElement interestoption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(optionXpath)));
+	            interestoption.click();
+	            break; 
+	        } catch(org.openqa.selenium.StaleElementReferenceException ex){
+	            try { Thread.sleep(1000); } catch (InterruptedException e) {}
+	        }
+	    }
 	}
 
 	public void clickInterestAddButton() {
@@ -155,36 +169,45 @@ public class StepperPage extends BasePage {
 	}
 
 	public void selectSkillFromDropdown(String skillname) {
-		type(SelectSkills, skillname);
-	//	String optionXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')" + "and normalize-space()='"
-	//			+skillname + "']";
-		   try {
-		        Thread.sleep(2000); 
-		    } catch (InterruptedException e) {
-		        e.printStackTrace();
-		    }
-		
-				String optionXpath = "//span[contains(@class,'mdc-list-item__primary-text')" + "and normalize-space()='"
-						+skillname + "']";
+	    type(SelectSkills, skillname);
+	    
+	    // 1. Wait for list to filter
+	    try { Thread.sleep(2000); } catch (InterruptedException e) {}
 
-		WebElement skilloption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
-		click(skilloption);
+	    // Note: I used the XPath from your code that was active
+	    String optionXpath = "//span[contains(@class,'mdc-list-item__primary-text')" + "and normalize-space()='"
+	            + skillname + "']";
+
+	    // 2. Retry Logic
+	    for(int i=0; i<3; i++){
+	        try{
+	            WebElement skilloption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(optionXpath)));
+	            skilloption.click();
+	            break; 
+	        } catch(org.openqa.selenium.StaleElementReferenceException ex){
+	            try { Thread.sleep(1000); } catch (InterruptedException e) {}
+	        }
+	    }
 	}
-
 	public void selectSkillLevelFromDropdown(String skilllevelname) {
-		click(skilllevel);
-		
-		   try {
-		        Thread.sleep(2000); 
-		    } catch (InterruptedException e) {
-		        e.printStackTrace();
-		    }
+	    click(skilllevel);
 
-		String levelXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')"+ "and normalize-space()='"
-				+ skilllevelname + "']";
+	    // 1. Wait for menu to animate open
+	    try { Thread.sleep(2000); } catch (InterruptedException e) {}
 
-		WebElement leveloption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(levelXpath)));
-		click(leveloption);
+	    String levelXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')"+ "and normalize-space()='"
+	            + skilllevelname + "']";
+
+	    // 2. Retry Logic
+	    for(int i=0; i<3; i++){
+	        try{
+	            WebElement leveloption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(levelXpath)));
+	            leveloption.click();
+	            break; 
+	        } catch(org.openqa.selenium.StaleElementReferenceException ex){
+	            try { Thread.sleep(1000); } catch (InterruptedException e) {}
+	        }
+	    }
 	}
 
 	public void clickOnSkillAddButton() {

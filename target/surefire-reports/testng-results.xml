@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-12T17:07:09 IST" name="Novo Automation Suite" finished-at="2025-12-12T17:10:18 IST" duration-ms="189109">
+  <suite started-at="2025-12-12T20:04:49 IST" name="Novo Automation Suite" finished-at="2025-12-12T20:07:15 IST" duration-ms="146051">
     <groups>
     </groups>
-    <test started-at="2025-12-12T17:07:09 IST" name="All Functional Tests" finished-at="2025-12-12T17:10:18 IST" duration-ms="189109">
+    <test started-at="2025-12-12T20:04:49 IST" name="All Functional Tests" finished-at="2025-12-12T20:07:15 IST" duration-ms="146051">
       <class name="regression.SignUPWithPOM">
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T17:08:17 IST" name="browserSetup" finished-at="2025-12-12T17:08:33 IST" duration-ms="16052" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T20:05:37 IST" name="browserSetup" finished-at="2025-12-12T20:05:42 IST" duration-ms="5788" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="SignUPValidation(java.util.HashMap)[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T17:08:33 IST" name="SignUPValidation" data-provider="getSignUPdata" finished-at="2025-12-12T17:08:42 IST" duration-ms="9104" status="PASS">
+        <test-method signature="SignUPValidation(java.util.HashMap)[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T20:05:42 IST" name="SignUPValidation" data-provider="getSignUPdata" finished-at="2025-12-12T20:05:51 IST" duration-ms="9191" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,17 +29,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUPValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T17:08:42 IST" name="tearDown" finished-at="2025-12-12T17:08:43 IST" duration-ms="338" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T20:05:52 IST" name="tearDown" finished-at="2025-12-12T20:05:52 IST" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- regression.SignUPWithPOM -->
       <class name="smoke.LoginWithdataproviderPOM">
-        <test-method is-config="true" signature="fileConfiuration()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:09 IST" name="fileConfiuration" finished-at="2025-12-12T17:07:09 IST" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="fileConfiuration()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:04:49 IST" name="fileConfiuration" finished-at="2025-12-12T20:04:50 IST" duration-ms="1292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileConfiuration -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:10 IST" name="browserSetup" finished-at="2025-12-12T17:07:18 IST" duration-ms="8241" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:04:52 IST" name="browserSetup" finished-at="2025-12-12T20:05:00 IST" duration-ms="7878" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:18 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T17:07:37 IST" duration-ms="19123" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:00 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:05:07 IST" duration-ms="7190" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,11 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:37 IST" name="tearDown" finished-at="2025-12-12T17:07:38 IST" duration-ms="1258" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:07 IST" name="tearDown" finished-at="2025-12-12T20:05:07 IST" duration-ms="557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:38 IST" name="browserSetup" finished-at="2025-12-12T17:07:44 IST" duration-ms="5808" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:07 IST" name="browserSetup" finished-at="2025-12-12T20:05:13 IST" duration-ms="6099" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,7 +76,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:44 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T17:07:47 IST" duration-ms="2346" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:13 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:05:15 IST" duration-ms="1831" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,11 +87,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:47 IST" name="tearDown" finished-at="2025-12-12T17:07:47 IST" duration-ms="399" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:15 IST" name="tearDown" finished-at="2025-12-12T20:05:16 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:47 IST" name="browserSetup" finished-at="2025-12-12T17:07:52 IST" duration-ms="5298" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:16 IST" name="browserSetup" finished-at="2025-12-12T20:05:21 IST" duration-ms="5267" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:52 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T17:07:54 IST" duration-ms="1838" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:21 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:05:23 IST" duration-ms="1776" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,11 +113,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:54 IST" name="tearDown" finished-at="2025-12-12T17:07:55 IST" duration-ms="287" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:23 IST" name="tearDown" finished-at="2025-12-12T20:05:23 IST" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:07:55 IST" name="browserSetup" finished-at="2025-12-12T17:08:08 IST" duration-ms="13088" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:23 IST" name="browserSetup" finished-at="2025-12-12T20:05:28 IST" duration-ms="5097" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +128,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:08:08 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T17:08:10 IST" duration-ms="1856" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:28 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:05:31 IST" duration-ms="2436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,11 +139,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:08:10 IST" name="tearDown" finished-at="2025-12-12T17:08:10 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:31 IST" name="tearDown" finished-at="2025-12-12T20:05:31 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:08:10 IST" name="browserSetup" finished-at="2025-12-12T17:08:15 IST" duration-ms="5038" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:31 IST" name="browserSetup" finished-at="2025-12-12T20:05:36 IST" duration-ms="4505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:08:15 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T17:08:15 IST" duration-ms="305" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:36 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T20:05:36 IST" duration-ms="275" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,17 +165,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:08:15 IST" name="tearDown" finished-at="2025-12-12T17:08:17 IST" duration-ms="1446" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:05:36 IST" name="tearDown" finished-at="2025-12-12T20:05:36 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportsFlush()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T17:10:17 IST" name="reportsFlush" finished-at="2025-12-12T17:10:18 IST" duration-ms="357" status="PASS">
+        <test-method is-config="true" signature="reportsFlush()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T20:07:15 IST" name="reportsFlush" finished-at="2025-12-12T20:07:15 IST" duration-ms="384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportsFlush -->
       </class> <!-- smoke.LoginWithdataproviderPOM -->
       <class name="regression.GAdmin_HomewithPOM">
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T17:09:11 IST" name="browserSetup" finished-at="2025-12-12T17:09:17 IST" duration-ms="5260" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T20:06:09 IST" name="browserSetup" finished-at="2025-12-12T20:06:14 IST" duration-ms="5021" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,7 +186,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="homePageRedirectionsvalidation()[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T17:09:17 IST" name="homePageRedirectionsvalidation" finished-at="2025-12-12T17:10:17 IST" duration-ms="60316" status="FAIL">
+        <test-method signature="homePageRedirectionsvalidation()[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T20:06:14 IST" name="homePageRedirectionsvalidation" finished-at="2025-12-12T20:07:14 IST" duration-ms="60308" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'card purple ng')]//child::button[text()='View']' (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -236,9 +236,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [476177bdc74df6baeda4ff3427301e7b, findElement {using=xpath, value=//div[contains(@class,'card purple ng')]//child::button[text()='View']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59015}, goog:processID: 1520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59015/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 476177bdc74df6baeda4ff3427301e7b
+Command: [b0ff65f4fae81145233adea24fa726c9, findElement {value=//div[contains(@class,'card purple ng')]//child::button[text()='View'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62752}, goog:processID: 28536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62752/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0ff65f4fae81145233adea24fa726c9
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -271,13 +271,13 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageRedirectionsvalidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T17:10:17 IST" name="tearDown" finished-at="2025-12-12T17:10:17 IST" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T20:07:14 IST" name="tearDown" finished-at="2025-12-12T20:07:15 IST" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- regression.GAdmin_HomewithPOM -->
       <class name="regression.StepperPOM">
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T17:08:43 IST" name="browserSetup" finished-at="2025-12-12T17:08:57 IST" duration-ms="14859" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T20:05:52 IST" name="browserSetup" finished-at="2025-12-12T20:05:57 IST" duration-ms="5070" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -288,7 +288,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="stepperpagetest(java.util.HashMap)[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T17:08:57 IST" name="stepperpagetest" data-provider="getTestDataFromExcel" finished-at="2025-12-12T17:09:11 IST" duration-ms="13477" status="FAIL">
+        <test-method signature="stepperpagetest(java.util.HashMap)[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T20:05:57 IST" name="stepperpagetest" data-provider="getTestDataFromExcel" finished-at="2025-12-12T20:06:09 IST" duration-ms="11351" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -304,10 +304,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [948c47cf2db6ae4a20bd62ba6fae1ead, isElementDisplayed {id=f.03B9FB7614EDC8F1627543E7FE867032.d.8E73F8E40B8F74F8D1FE06F2712E82AD.e.79}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58968}, goog:processID: 1076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58968/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (948c47cf2db6ae4a20bd62ba6fae1ead)] -> xpath: //mat-option[contains(@class,'mat-mdc-option mdc-list-item')and normalize-space()='Software Quality Assurance']]
-Session ID: 948c47cf2db6ae4a20bd62ba6fae1ead]]>
+Command: [81e5071a26629cbd5a54ce9488ea0c7c, clickElement {id=f.7EE7442DA10A4CC37B8C8C5E686BE3D7.d.C7F34E5B8BD10423E25032E44CB37A4E.e.80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62707}, goog:processID: 2292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62707/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81e5071a26629cbd5a54ce9488ea0c7c)] -> xpath: //mat-option[contains(@class,'mat-mdc-option mdc-list-item')and normalize-space()='Software Quality Assurance']]
+Session ID: 81e5071a26629cbd5a54ce9488ea0c7c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
@@ -316,10 +316,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.38.0', revision: '6b412e825c*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [948c47cf2db6ae4a20bd62ba6fae1ead, isElementDisplayed {id=f.03B9FB7614EDC8F1627543E7FE867032.d.8E73F8E40B8F74F8D1FE06F2712E82AD.e.79}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58968}, goog:processID: 1076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58968/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (948c47cf2db6ae4a20bd62ba6fae1ead)] -> xpath: //mat-option[contains(@class,'mat-mdc-option mdc-list-item')and normalize-space()='Software Quality Assurance']]
-Session ID: 948c47cf2db6ae4a20bd62ba6fae1ead
+Command: [81e5071a26629cbd5a54ce9488ea0c7c, clickElement {id=f.7EE7442DA10A4CC37B8C8C5E686BE3D7.d.C7F34E5B8BD10423E25032E44CB37A4E.e.80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.42, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62707}, goog:processID: 2292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62707/devtoo..., se:cdpVersion: 143.0.7499.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81e5071a26629cbd5a54ce9488ea0c7c)] -> xpath: //mat-option[contains(@class,'mat-mdc-option mdc-list-item')and normalize-space()='Software Quality Assurance']]
+Session ID: 81e5071a26629cbd5a54ce9488ea0c7c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -333,15 +333,9 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:662)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at pages.BasePage.click(BasePage.java:33)
-at pages.StepperPage.selectJobCategoryFromDropdown(StepperPage.java:113)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.BasePage.click(BasePage.java:34)
+at pages.StepperPage.selectJobCategoryFromDropdown(StepperPage.java:107)
 at regression.StepperPOM.stepperpagetest(StepperPOM.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -381,7 +375,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stepperpagetest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T17:09:11 IST" name="tearDown" finished-at="2025-12-12T17:09:11 IST" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T20:06:09 IST" name="tearDown" finished-at="2025-12-12T20:06:09 IST" duration-ms="345" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -35,8 +36,9 @@ public class BaseTest {
 	public void fileConfiuration() {
 
 		try {
-			fis = new FileInputStream(
-"C:\\Users\\dlakkamraju\\eclipse-workspace\\Novo_Hybrid_FrameWork\\Properties\\configurationfiles\\configuration.properties");
+			// CHANGE 1: Use System.getProperty("user.dir") for dynamic path
+			String projectPath = System.getProperty("user.dir");
+			fis = new FileInputStream(projectPath + "\\Properties\\configurationfiles\\configuration.properties");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -58,9 +60,16 @@ public class BaseTest {
 
 		switch (conprop.getProperty("browser")) {
 		case "chrome":
-			driver = new ChromeDriver();
+			// CHANGE 2: Add ChromeOptions to force screen size in Jenkins
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			options.addArguments("--start-maximized"); 
+			options.addArguments("--window-size=1920,1080"); // Crucial for Jenkins/System User
+			
+			driver = new ChromeDriver(options);
 			test.log(Status.INFO, conprop.getProperty("browser") +" browser is selected");
 			break;
+			
 		case "firefox":
 			driver = new FirefoxDriver();
 			test.log(Status.INFO, conprop.getProperty("browser") +" browser is selected");
@@ -75,14 +84,19 @@ public class BaseTest {
 		}
 
 		driver.get(conprop.getProperty("URL"));
-		driver.manage().window().maximize();
+		
+		// This line is good, but the ChromeOptions above guarantees the size even if this fails
+		driver.manage().window().maximize(); 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 	}
 
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
+		// It is safer to check if driver is null before quitting
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 	
 	@AfterTest

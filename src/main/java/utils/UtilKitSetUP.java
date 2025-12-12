@@ -24,9 +24,10 @@ public class UtilKitSetUP extends BaseTest {
 	public static List<HashMap<String, String>> getTestDataFromExcel(String sheetname) {
 
 		List<HashMap<String, String>> alltestdata = new ArrayList<>();
+		String projectPath = System.getProperty("user.dir");
+		String excelPath = projectPath + "\\src\\test\\resources\\Excels\\NOVO_testcases_masterexcel.xlsx";
 
-		try (FileInputStream fis1 = new FileInputStream
-				("C:\\Users\\dlakkamraju\\eclipse-workspace\\Novo_Hybrid_FrameWork\\src\\test\\resources\\Excels\\NOVO_testcases_masterexcel.xlsx"); 
+		try (FileInputStream fis1 = new FileInputStream(excelPath); 
 				XSSFWorkbook wb = new XSSFWorkbook(fis1)) {
 
 			XSSFSheet ws = wb.getSheet(sheetname);
@@ -43,18 +44,19 @@ public class UtilKitSetUP extends BaseTest {
 				HashMap<String, String> data = new HashMap<String, String>();
 
 				for (int j = 0; j <= headerrow.getLastCellNum(); j++) {
-					String key = format.formatCellValue(headerrow.getCell(j));
-					String value = format.formatCellValue(currentrow.getCell(j));
+					// Add null check for cells to avoid NullPointerException
+					if (headerrow.getCell(j) != null && currentrow.getCell(j) != null) {
+						String key = format.formatCellValue(headerrow.getCell(j));
+						String value = format.formatCellValue(currentrow.getCell(j));
 
-					if (key != null && !key.isEmpty()) {
-
-						data.put(key, value);
+						if (key != null && !key.isEmpty()) {
+							data.put(key, value);
+						}
 					}
 				}
 				alltestdata.add(data);
 			}
 		} catch (IOException e) {
-
 			e.printStackTrace();
 		}
 
@@ -65,10 +67,9 @@ public class UtilKitSetUP extends BaseTest {
 	public static String getScreenShot() {
 		
 		
-		String pattern="yyyy-MM-dd HH:mm:ss";
+		String pattern="yyyy-MM-dd HH-mm-ss"; // Changed colon : to hyphen - for better Windows compatibility
 		SimpleDateFormat sfd=new SimpleDateFormat(pattern);
-		String d=sfd.format(new Date());
-		String date=d.replace(":", "-");
+		String date=sfd.format(new Date());
 		
 		String screenshotfilepath=System.getProperty("user.dir")+"\\Screenshots\\"+date+".png";
 		
