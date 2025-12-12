@@ -1,0 +1,5 @@
+regression\GAdmin_HomewithPOM.class
+smoke\LoginWithdataproviderPOM.class
+regression\StepperPOM.class
+regression\SignUPWithPOM.class
+smoke\LoginWithPOM.class

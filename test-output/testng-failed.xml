@@ -9,12 +9,21 @@
       <class name="regression.StepperPOM">
         <methods>
           <include name="tearDown"/>
-          <include name="stepperpagetest" invocation-numbers="0"/>
           <include name="fileConfiuration"/>
+          <include name="stepperpagetest" invocation-numbers="0"/>
           <include name="browserSetup"/>
           <include name="reportsFlush"/>
         </methods>
       </class> <!-- regression.StepperPOM -->
+      <class name="regression.GAdmin_HomewithPOM">
+        <methods>
+          <include name="homePageRedirectionsvalidation"/>
+          <include name="tearDown"/>
+          <include name="fileConfiuration"/>
+          <include name="browserSetup"/>
+          <include name="reportsFlush"/>
+        </methods>
+      </class> <!-- regression.GAdmin_HomewithPOM -->
     </classes>
   </test> <!-- All Functional Tests(failed) -->
 </suite> <!-- Failed suite [Novo Automation Suite] -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Novo Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utils.TestNGListeners"/>
+  </listeners>
+  <test thread-count="5" name="All Functional Tests(failed)" verbose="0">
+    <classes>
+      <class name="regression.GAdmin_HomewithPOM">
+        <methods>
+          <include name="homePageRedirectionsvalidation"/>
+          <include name="tearDown"/>
+          <include name="fileConfiuration"/>
+          <include name="browserSetup"/>
+          <include name="reportsFlush"/>
+        </methods>
+      </class> <!-- regression.GAdmin_HomewithPOM -->
+      <class name="regression.StepperPOM">
+        <methods>
+          <include name="tearDown"/>
+          <include name="stepperpagetest" invocation-numbers="0"/>
+          <include name="fileConfiuration"/>
+          <include name="browserSetup"/>
+          <include name="reportsFlush"/>
+        </methods>
+      </class> <!-- regression.StepperPOM -->
+    </classes>
+  </test> <!-- All Functional Tests(failed) -->
+</suite> <!-- Failed suite [Novo Automation Suite] -->

@@ -104,7 +104,12 @@ public class StepperPage extends BasePage {
 				+ jobcategoryname + "']";
 
 		WebElement jobTitleOption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
-
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		click(jobTitleOption);
 	}
 
@@ -125,6 +130,12 @@ public class StepperPage extends BasePage {
 		String optionXpath = "//mat-option[contains(@class,'mat-mdc-option mdc-list-item')" + "and normalize-space()='"
 				+ interestname + "']";
 		WebElement interestoption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		click(interestoption);
 	}
 
@@ -160,6 +171,12 @@ public class StepperPage extends BasePage {
 						+skillname + "']";
 
 		WebElement skilloption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		click(skilloption);
 	}
 
@@ -170,6 +187,12 @@ public class StepperPage extends BasePage {
 				+ skilllevelname + "']";
 
 		WebElement leveloption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(levelXpath)));
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		click(leveloption);
 	}
 
