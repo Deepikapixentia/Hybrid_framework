@@ -7,8 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class GAdmin_HomePage extends BasePage {
 
-	@FindBy(xpath = "//div[contains(@class,'card purple ng')]//child::button[text()='View']")
-	WebElement userstabviewbutton;
+	  @FindBy(xpath = "//div[contains(@class,'card purple')]//button")
+      WebElement userstabviewbutton;
 
 	@FindBy(xpath = "//div[contains(@class,'card blue')]//child::button[text()='View']")
 	WebElement learnjourneytabviewbutton;
@@ -35,32 +35,34 @@ public class GAdmin_HomePage extends BasePage {
 		super();
 	}
 
-	public void usersView() {		
-		wait.until(ExpectedConditions.visibilityOf(userstabviewbutton));		
+	public void usersTabView() {		
+		wait.until(ExpectedConditions.elementToBeClickable(userstabviewbutton));			
+	//	click(userstabviewbutton);
+		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", userstabviewbutton);
 	}
 
 	public void learningJourneyTabView() {
-		wait.until(ExpectedConditions.visibilityOf(learnjourneytabviewbutton));
+		wait.until(ExpectedConditions.elementToBeClickable(learnjourneytabviewbutton));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", learnjourneytabviewbutton);
 	}
 
 	public void gamificationTabView() {
-		wait.until(ExpectedConditions.visibilityOf(gamificationtabviewbutton));
+		wait.until(ExpectedConditions.elementToBeClickable(gamificationtabviewbutton));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", gamificationtabviewbutton);
 	}
 
 	public void assessmentsTabView() {
-		wait.until(ExpectedConditions.visibilityOf(assessementtabviewbutton));
+		wait.until(ExpectedConditions.elementToBeClickable(assessementtabviewbutton));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", assessementtabviewbutton);
 	}
 
 
-	public void clicOnHomeTab() {
+	public void clickOnHomeTab() {
 	
 		if (!getTitle().equalsIgnoreCase("Home")) {
 			wait.until(ExpectedConditions.elementToBeClickable(homebutton));
@@ -86,6 +88,7 @@ public class GAdmin_HomePage extends BasePage {
 
 	public void getTotalLearnJourneysInApplication() {
 		getText(totaluserscount);
+		System.out.println(totaluserscount.getText());
 	}
 
 }

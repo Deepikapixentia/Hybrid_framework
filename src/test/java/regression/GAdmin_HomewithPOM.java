@@ -17,15 +17,29 @@ public class GAdmin_HomewithPOM extends BaseTest  {
 		lg.passwordfield("Test123$");
 		lg.loginbutton();
 		
+		
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		GAdmin_HomePage gadminhomepage=	new GAdmin_HomePage();
-		gadminhomepage.usersView();
-		gadminhomepage.clicOnHomeTab();
+		
+		gadminhomepage.usersTabView();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		gadminhomepage.clickOnHomeTab();
 		gadminhomepage.learningJourneyTabView();
-		gadminhomepage.clicOnHomeTab();
+		gadminhomepage.clickOnHomeTab();
 		gadminhomepage.gamificationTabView();
-		gadminhomepage.clicOnHomeTab();
+		gadminhomepage.clickOnHomeTab();
 		gadminhomepage.assessmentsTabView();
-		gadminhomepage.clicOnHomeTab();
+		gadminhomepage.clickOnHomeTab();
+		
 		gadminhomepage.getTotalUsersInApplication();
 		gadminhomepage.getTotalOrgsInApplication();
 		gadminhomepage.getTotalLearnJourneysInApplication();

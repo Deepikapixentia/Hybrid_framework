@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-12T22:29:55 IST" name="Novo Automation Suite" finished-at="2025-12-12T22:32:27 IST" duration-ms="152226">
+  <suite started-at="2025-12-15T14:38:54 IST" name="Novo Automation Suite" finished-at="2025-12-15T14:41:17 IST" duration-ms="142149">
     <groups>
     </groups>
-    <test started-at="2025-12-12T22:29:55 IST" name="All Functional Tests" finished-at="2025-12-12T22:32:27 IST" duration-ms="152226">
+    <test started-at="2025-12-15T14:38:54 IST" name="All Functional Tests" finished-at="2025-12-15T14:41:17 IST" duration-ms="142149">
       <class name="regression.SignUPWithPOM">
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T22:30:56 IST" name="browserSetup" finished-at="2025-12-12T22:31:01 IST" duration-ms="5465" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-15T14:39:51 IST" name="browserSetup" finished-at="2025-12-15T14:39:59 IST" duration-ms="8277" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="SignUPValidation(java.util.HashMap)[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T22:31:01 IST" name="SignUPValidation" data-provider="getSignUPdata" finished-at="2025-12-12T22:31:11 IST" duration-ms="9263" status="PASS">
+        <test-method signature="SignUPValidation(java.util.HashMap)[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-15T14:39:59 IST" name="SignUPValidation" data-provider="getSignUPdata" finished-at="2025-12-15T14:40:09 IST" duration-ms="10200" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,17 +29,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUPValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-12T22:31:11 IST" name="tearDown" finished-at="2025-12-12T22:31:12 IST" duration-ms="1154" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.SignUPWithPOM@235834f2]" started-at="2025-12-15T14:40:09 IST" name="tearDown" finished-at="2025-12-15T14:40:10 IST" duration-ms="704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- regression.SignUPWithPOM -->
       <class name="smoke.LoginWithdataproviderPOM">
-        <test-method is-config="true" signature="fileConfiuration()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:29:55 IST" name="fileConfiuration" finished-at="2025-12-12T22:29:56 IST" duration-ms="294" status="PASS">
+        <test-method is-config="true" signature="fileConfiuration()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:38:54 IST" name="fileConfiuration" finished-at="2025-12-15T14:38:55 IST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fileConfiuration -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:29:56 IST" name="browserSetup" finished-at="2025-12-12T22:30:11 IST" duration-ms="14106" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:38:56 IST" name="browserSetup" finished-at="2025-12-15T14:39:06 IST" duration-ms="10017" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:11 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T22:30:17 IST" duration-ms="6147" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:06 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-15T14:39:12 IST" duration-ms="6215" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,11 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:17 IST" name="tearDown" finished-at="2025-12-12T22:30:17 IST" duration-ms="559" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:12 IST" name="tearDown" finished-at="2025-12-15T14:39:13 IST" duration-ms="455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:17 IST" name="browserSetup" finished-at="2025-12-12T22:30:23 IST" duration-ms="5682" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:13 IST" name="browserSetup" finished-at="2025-12-15T14:39:19 IST" duration-ms="6612" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,7 +76,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:23 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T22:30:26 IST" duration-ms="2771" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:19 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-15T14:39:21 IST" duration-ms="1920" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,11 +87,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:26 IST" name="tearDown" finished-at="2025-12-12T22:30:26 IST" duration-ms="428" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:21 IST" name="tearDown" finished-at="2025-12-15T14:39:21 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:26 IST" name="browserSetup" finished-at="2025-12-12T22:30:33 IST" duration-ms="6528" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:21 IST" name="browserSetup" finished-at="2025-12-15T14:39:30 IST" duration-ms="8223" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:33 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T22:30:35 IST" duration-ms="2502" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:30 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-15T14:39:32 IST" duration-ms="2249" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,11 +113,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:36 IST" name="tearDown" finished-at="2025-12-12T22:30:36 IST" duration-ms="717" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:33 IST" name="tearDown" finished-at="2025-12-15T14:39:33 IST" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:36 IST" name="browserSetup" finished-at="2025-12-12T22:30:44 IST" duration-ms="8153" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:33 IST" name="browserSetup" finished-at="2025-12-15T14:39:40 IST" duration-ms="6174" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +128,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:44 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T22:30:46 IST" duration-ms="2020" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:40 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-15T14:39:41 IST" duration-ms="1847" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,11 +139,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:47 IST" name="tearDown" finished-at="2025-12-12T22:30:47 IST" duration-ms="471" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:42 IST" name="tearDown" finished-at="2025-12-15T14:39:42 IST" duration-ms="817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:47 IST" name="browserSetup" finished-at="2025-12-12T22:30:55 IST" duration-ms="7531" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:42 IST" name="browserSetup" finished-at="2025-12-15T14:39:49 IST" duration-ms="6976" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:55 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-12T22:30:55 IST" duration-ms="305" status="PASS">
+        <test-method signature="login(java.util.HashMap)[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:49 IST" name="login" data-provider="getlogintestdata" finished-at="2025-12-15T14:39:50 IST" duration-ms="410" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,17 +165,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:30:55 IST" name="tearDown" finished-at="2025-12-12T22:30:56 IST" duration-ms="590" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:39:50 IST" name="tearDown" finished-at="2025-12-15T14:39:50 IST" duration-ms="517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportsFlush()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-12T22:32:27 IST" name="reportsFlush" finished-at="2025-12-12T22:32:27 IST" duration-ms="406" status="PASS">
+        <test-method is-config="true" signature="reportsFlush()[pri:0, instance:smoke.LoginWithdataproviderPOM@a1153bc]" started-at="2025-12-15T14:41:16 IST" name="reportsFlush" finished-at="2025-12-15T14:41:17 IST" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportsFlush -->
       </class> <!-- smoke.LoginWithdataproviderPOM -->
       <class name="regression.GAdmin_HomewithPOM">
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T22:31:43 IST" name="browserSetup" finished-at="2025-12-12T22:31:48 IST" duration-ms="5857" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-15T14:40:38 IST" name="browserSetup" finished-at="2025-12-15T14:40:43 IST" duration-ms="5587" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -186,17 +186,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="homePageRedirectionsvalidation()[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T22:31:48 IST" name="homePageRedirectionsvalidation" finished-at="2025-12-12T22:32:27 IST" duration-ms="38157" status="PASS">
+        <test-method signature="homePageRedirectionsvalidation()[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-15T14:40:43 IST" name="homePageRedirectionsvalidation" finished-at="2025-12-15T14:41:16 IST" duration-ms="32161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageRedirectionsvalidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-12T22:32:27 IST" name="tearDown" finished-at="2025-12-12T22:32:27 IST" duration-ms="339" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.GAdmin_HomewithPOM@4218d6a3]" started-at="2025-12-15T14:41:16 IST" name="tearDown" finished-at="2025-12-15T14:41:16 IST" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- regression.GAdmin_HomewithPOM -->
       <class name="regression.StepperPOM">
-        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T22:31:12 IST" name="browserSetup" finished-at="2025-12-12T22:31:20 IST" duration-ms="7961" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.reflect.Method)[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-15T14:40:10 IST" name="browserSetup" finished-at="2025-12-15T14:40:17 IST" duration-ms="6634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -207,7 +207,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="stepperpagetest(java.util.HashMap)[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T22:31:20 IST" name="stepperpagetest" data-provider="getTestDataFromExcel" finished-at="2025-12-12T22:31:42 IST" duration-ms="22113" status="PASS">
+        <test-method signature="stepperpagetest(java.util.HashMap)[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-15T14:40:17 IST" name="stepperpagetest" data-provider="getTestDataFromExcel" finished-at="2025-12-15T14:40:37 IST" duration-ms="20834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,7 +218,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stepperpagetest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-12T22:31:42 IST" name="tearDown" finished-at="2025-12-12T22:31:43 IST" duration-ms="368" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.StepperPOM@5656be13]" started-at="2025-12-15T14:40:37 IST" name="tearDown" finished-at="2025-12-15T14:40:38 IST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
