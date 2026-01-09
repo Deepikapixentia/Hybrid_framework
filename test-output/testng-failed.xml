@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" name="All Functional Tests(failed)">
     <classes>
-      <class name="smoke.LoginWithdataproviderPOM">
+      <class name="regression.StepperPOM">
         <methods>
           <include name="tearDown"/>
           <include name="fileConfiuration"/>
+          <include name="stepperpagetest" invocation-numbers="0"/>
           <include name="browserSetup"/>
           <include name="reportsFlush"/>
-          <include name="login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- smoke.LoginWithdataproviderPOM -->
+      </class> <!-- regression.StepperPOM -->
     </classes>
   </test> <!-- All Functional Tests(failed) -->
 </suite> <!-- Failed suite [Novo Automation Suite] -->

@@ -87,8 +87,8 @@ public class GAdmin_HomePage extends BasePage {
 	}
 
 	public void getTotalLearnJourneysInApplication() {
-		getText(totaluserscount);
-		System.out.println(totaluserscount.getText());
+		getText(totallearnjourneyscount);
+		System.out.println(totallearnjourneyscount.getText());
 	}
 
 }
